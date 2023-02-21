@@ -1,0 +1,789 @@
+@keyframes mymove {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cor {
+  5% {
+    filter: drop-shadow(7px 5px 10px #5f0590);
+  }
+  20% {
+    filter: drop-shadow(7px 5px 10px rgb(159, 49, 206));
+  }
+  50% {
+    filter: drop-shadow(7px 5px 10px rgb(112, 19, 106));
+  }
+
+  80% {
+    filter: drop-shadow(7px 5px 10px rgba(147, 29, 187, 0.215));
+  }
+
+  90% {
+    filter: drop-shadow(7px 5px 10px rgba(138, 31, 144, 0.987));
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  flex-direction: row;
+}
+.title-box {
+  position: relative;
+  width: 100%;
+  height: 8.5rem;
+}
+.h1-title {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  width: 100%;
+  left: 6%;
+  top: 15%;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+}
+.h1-title-1 {
+  position: absolute;
+  z-index: -1;
+  color: #ffffff;
+  top: -40%;
+  font-size: 200px;
+  left: 3.8%;
+  width: 100%;
+  letter-spacing: 2rem;
+  opacity: 5%;
+}
+.h1-title-2 {
+  position: absolute;
+  z-index: -1;
+  color: #ffffff;
+  top: 30%;
+  font-size: 90px;
+  left: 10%;
+  width: 100%;
+  letter-spacing: 1.5rem;
+  opacity: 80%;
+  font-weight: bolder;
+}
+.h1-title-3 {
+  position: absolute;
+  color: #ffffff;
+  top: 20%;
+  font-size: 15px;
+  left: 74%;
+  width: 100%;
+  opacity: 80%;
+  font-family: "roboto";
+  font-weight: bolder;
+}
+.gengar {
+  position: absolute;
+  animation: cor 8s infinite;
+  left: 18rem;
+  top: 7%;
+  height: 2.2rem;
+}
+p {
+  color: #21ebff;
+}
+.section-main {
+  position: relative;
+  height: 37.5rem;
+  margin-top: -0.8rem;
+}
+.bolhas {
+  border-radius: 64% 51% 26% 22%/ 49% 66% 35% 67%;
+  background: #48dcff;
+  background-image: linear-gradient(180deg, #48dcff, #c70b8f);
+  box-shadow: (2px -2px 5px #7f0bc7);
+  height: 250px;
+  width: 250px;
+  animation: mymove 10s infinite;
+  position: absolute;
+  left: 39%;
+  top: 31%;
+  opacity: 85%;
+  z-index: -1;
+}
+a {
+  position: relative;
+  padding: 10px 30px;
+  margin: 45px 0;
+  color: #21ebff;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  opacity: 60%;
+  border-radius: 2rem;
+  scroll-behavior: smooth;
+}
+a::before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 50%;
+}
+a::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #21ebff;
+  border-right: 2px solid #21ebff;
+  transition: 0.2s;
+  transition-delay: 0.2;
+  opacity: 50%;
+}
+a:hover::before,
+a:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0.2s;
+  animation: cor 8s infinite;
+  border-radius: 2rem;
+}
+a:hover {
+  background: #21ebff;
+  color: #000;
+  box-shadow: 0 0 50px #21ebff;
+  transition-delay: 0.2s;
+}
+.tecnologias-texto {
+  position: absolute;
+  color: #fff;
+  opacity: 80%;
+  bottom: 45%;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  left: 9%;
+  font-family: "Courier New", Courier, monospace;
+}
+.page-1 {
+  position: absolute;
+  bottom: 22%;
+  left: 11%;
+  font-size: 2rem;
+}
+.page-2 {
+  position: absolute;
+  bottom: 22%;
+  right: 14%;
+  font-size: 2rem;
+}
+.projects {
+  position: absolute;
+  color: #fff;
+  opacity: 80%;
+  bottom: 40%;
+  font-size: 1.1rem;
+  right: 6%;
+  font-family: "Courier New", Courier, monospace;
+  width: 25rem;
+  height: 9rem;
+}
+.skills {
+  color: #fff;
+  position: absolute;
+  font-size: 3rem;
+  left: 5.5%;
+  top: 3%;
+  letter-spacing: 0.25rem;
+}
+.section-skills {
+  position: relative;
+  height: 30rem;
+  scroll-behavior: smooth;
+  background: rgba(25, 25, 25, 0.15);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  width: 99%;
+  height: 30rem;
+  margin-left: 0.5%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin-top: 20px;
+  margin-left: 1.6rem;
+}
+.gengar-skill {
+  position: absolute;
+  left: 1%;
+  top: 0.5%;
+  width: 3.5rem;
+  animation: cor 8s infinite;
+}
+.skill-text {
+  position: absolute;
+  left: 1.5%;
+  top: 18%;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.2rem;
+  width: 52%;
+}
+.tecnologias-trabalhadas {
+  position: absolute;
+  left: 1.5%;
+  top: 34%;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.2rem;
+}
+.tecnologias-imagens {
+  position: absolute;
+  height: 11rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  left: 2%;
+  bottom: 20%;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.074);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+#imagens-tecnologias {
+  height: 10.5rem;
+  padding: 0.1rem;
+  border-radius: 0.9rem;
+}
+.box-imagens {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.section-projects {
+  position: relative;
+  height: 33rem;
+  scroll-behavior: smooth;
+  background: rgba(25, 25, 25, 0.15);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  width: 99%;
+  height: 35rem;
+  margin-left: 0.5%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin-top: 20px;
+  scroll-behavior: smooth;
+  margin-left: 1.6rem;
+}
+.projects-text {
+  position: absolute;
+  left: 30%;
+  top: 38%;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.2rem;
+  width: 52%;
+}
+.project-title {
+  position: absolute;
+  left: 37.5%;
+  top: 22%;
+  color: #fff;
+  opacity: 85%;
+  font-size: 4rem;
+  width: 52%;
+  animation: cor 8s infinite;
+}
+.bolhas-projects {
+  border-radius: 64% 51% 26% 22%/ 49% 66% 35% 67%;
+  background: #48dcff;
+  background-image: linear-gradient(180deg, #48dcff, #c70b8f);
+  box-shadow: (2px -2px 5px #7f0bc7);
+  height: 100px;
+  width: 100px;
+  animation: mymove 10s infinite;
+  position: absolute;
+  left: 45%;
+  top: 3%;
+  opacity: 85%;
+  z-index: -1;
+}
+.imagens-projetos {
+  width: 15rem;
+  height: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  transition-delay: 2s;
+  -moz-transition: all 0.3s;
+  transition: all 0.4s;
+}
+  .project-images-box {
+    padding: 0.5rem;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+.imagens-projetos:hover {
+  width: 17rem;
+  height: 12rem;
+  cursor: pointer;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.project-images {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.text-projects {
+  position: absolute;
+  width: 30%;
+  padding: 0.3rem;
+  display: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.5rem;
+  left: -3%;
+}
+#textProject2 {
+  position: absolute;
+  width: 30%;
+  padding: 0.3rem;
+  display: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.5rem;
+  left: 16%;
+}
+#textProject3 {
+  position: absolute;
+  width: 30%;
+  padding: 0.3rem;
+  display: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.5rem;
+  left: 35%;
+}
+#textProject4 {
+  position: absolute;
+  width: 30%;
+  padding: 0.3rem;
+  display: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.5rem;
+  left: 55%;
+}
+#textProject5 {
+  position: absolute;
+  width: 30%;
+  padding: 0.3rem;
+  display: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.5rem;
+  left: 75%;
+}
+.footer {
+  position: relative;
+  height: 20rem;
+  width: 95%;
+  margin-left: 3.5rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  background: rgba(48, 63, 64, 0.15);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin-bottom: 3rem;
+}
+.footer-text {
+  position: absolute;
+  color: #fff;
+  left: 40%;
+  
+  top: 3%;
+  width: 19rem;
+}
+.footer-text2 {
+  position: absolute;
+  color: #fff;
+  left: 27%;
+  top: 25%;
+  font-size: 8rem;
+}
+.email-footer {
+  position: absolute;
+  color: #fff;
+  bottom: 0%;
+  left: 40%;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.conections {
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+  height: 7rem;
+  width: 90%;
+  position: relative;
+  border-radius: 0.5rem;
+  background: rgba(25, 25, 25, 0.15);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.h3-footer {
+  position: absolute;
+  color: #fff;
+  left: 10rem;
+  top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: "roboto";
+  display: flex;
+  gap: 0.3rem;
+  animation: cor 8s infinite;
+}
+.direitos {
+  color: #fff;
+  position: absolute;
+  font-family: "roboto";
+  bottom: 5%;
+  left: 43%;
+}
+.github {
+  cursor: pointer;
+}
+.instagram {
+  position: absolute;
+  right: 25%;
+  top: 38%;
+  cursor: pointer;
+  animation: cor 8s infinite;
+}
+.whatsapp {
+  position: absolute;
+  right: 21%;
+  top: 38%;
+  cursor: pointer;
+  animation: cor 8s infinite;
+}
+.gengar-footer {
+  position: absolute;
+  left: 4%;
+  top: 10%;
+  width: 5rem;
+  animation: cor 8s infinite;
+}
+.texto-mobile{
+    display: none;
+}
+@media (max-width: 900px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .header {
+    padding: 0.8rem;
+    position: relative;
+    width: 99%;
+    height: 10rem;
+  }
+  .title-box {
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    height: 8.5rem;
+  }
+  .h1-title-1 {
+    position: absolute;
+    font-size: 5.2rem;
+    letter-spacing: 0.7rem;
+    left: -2%;
+    top: -38%;
+  }
+  .gengar {
+    position: absolute;
+    top: 10%;
+    left: 41.5%;
+  }
+  .h1-title {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    font-size: 1.2rem;
+  }
+  .h1-title-2 {
+    position: absolute;
+    left: 0.3%;
+    top: 70%;
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+    width: 25rem;
+  }
+
+  .h1-title-3 {
+    position: absolute;
+    left: 58%;
+    top: 35%;
+    font-size: 0.7rem;
+    width: 9.5rem;
+  }
+  .section-main {
+    left: 1.2%;
+    margin-top: 1.5rem;
+  }
+  .bolhas {
+    top: 3.9%;
+    left: 30%;
+    width: 9rem;
+    height: 9rem;
+  }
+  .projects {
+    top: 35%;
+    left: 1.2%;
+    font-size: 0.9rem;
+    height: 5.3rem;
+  }
+  .tecnologias-texto {
+    bottom: 25%;
+    left: 18%;
+  }
+  .page-2 {
+    bottom: 30%;
+    right: 35%;
+  }
+  .page-1 {
+    bottom: 2%;
+    left: 25%;
+  }
+  .section-skills {
+    margin-left: 0.1rem;
+  }
+  .gengar-skill {
+    top: 1%;
+  }
+  .skills {
+    left: 18%;
+    top: 4%;
+  }
+  .skill-text {
+    width: 98%;
+    left: 2%;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+  }
+  .tecnologias-trabalhadas {
+    top: 37%;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  .tecnologias-imagens {
+    position: absolute;
+    height: 12rem;
+    overflow-x: scroll;
+    width: 95%;
+    bottom: 11%;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  .box-imagens {
+    position: absolute;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+  #imagens-tecnologias {
+    height: 11rem;
+    padding: 0.1rem;
+    border-radius: 0.9rem;
+  }
+  .section-projects {
+    position: relative;
+    scroll-behavior: smooth;
+    background: rgba(25, 25, 25, 0.15);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 0.9rem;
+    width: 96%;
+    height: 35rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-top: 20px;
+    scroll-behavior: smooth;
+    margin-left: 0.5rem;
+  }
+  .bolhas-projects {
+    top: 3%;
+    left: 38%;
+  }
+  .project-title {
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    font-size: 3.5rem;
+    top: 25%;
+  }
+  .projects-text {
+    width: 75%;
+    left: 15%;
+  }
+  .project-images {
+    position: absolute;
+    left: 1%;
+    top: 55%;
+    height: 11.5rem;
+    width: 98%;
+    overflow-x: scroll;
+    border-radius: 0.7rem;
+  }
+  .imagens-projetos {
+    border-radius: 0.7rem;
+    transition-delay: 2s;
+    -moz-transition: all 0.3s;
+    transition: all 0.4s;
+  }
+  .project-images-box {
+    padding: 0.5rem;
+    position: absolute;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+  .imagens-projetos:hover {
+    width: 11rem;
+    height: 10rem;
+  }
+  .footer {
+    margin-left: 0.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer-text {
+    position: absolute;
+    color: #fff;
+    left: 10%;
+    top: 3%;
+    width: 18rem;
+  }
+  .footer-text2 {
+    position: absolute;
+    color: #fff;
+    left: 5%;
+    top: 25%;
+    font-size: 4rem;
+    animation: cor 8s infinite;
+  }
+  .email-footer {
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 14%;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+  .conections {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    height: 7rem;
+    width: 95%;
+  }
+  .h3-footer {
+    left: 2%;
+    top: 10%;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-family: "roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    animation: cor 8s infinite;
+  }
+  .direitos {
+    color: #fff;
+    position: absolute;
+    font-family: "roboto";
+    bottom: 5%;
+    left: 25%;
+  }
+  .github {
+    cursor: pointer;
+  }
+  .instagram {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    cursor: pointer;
+    animation: cor 8s infinite;
+  }
+  .whatsapp {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    cursor: pointer;
+    animation: cor 8s infinite;
+  }
+  .gengar-footer {
+    left: 2%;
+    top: 40%;
+    width: 3.5rem;
+  }
+  .texto-mobile{
+    position: absolute;
+    color: #fff;
+    top: 92%;
+    left: 13%;
+    display: block;
+  }
+}
+@media (max-width: 400px){
+  .gengar{
+    left: 47%;
+  }
+  .email-footer{
+    left: 10%;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+  }
+  .footer-text2 {
+    left: 12%;
+    top: 35%;
+    font-size: 3rem;
+  }
+}
