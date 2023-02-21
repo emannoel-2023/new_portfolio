@@ -22,7 +22,7 @@ imagemClima.addEventListener("mouseenter", () => {
 });
 imagemClima.addEventListener("click", () => {
   window.open(
-    "https://github.com/davi33-emanoel/monitor-climatico-js",
+    "https://github.com/emannoel-2023/monitor_climatico",
     "_blank"
   );
 });
@@ -34,7 +34,7 @@ imagemNasa.addEventListener("mouseenter", () => {
   textProject2.style.display = "block";
 });
 imagemNasa.addEventListener("click", () => {
-  window.open("https://github.com/davi33-emanoel/Nasa_2.0", "_blank");
+  window.open("https://emannoel-2023.github.io/nasa_2.0/", "_blank");
 });
 imagemNasa.addEventListener("mouseout", () => {
   textProject2.style.display = "none";
@@ -44,7 +44,7 @@ imagemPokedex.addEventListener("mouseenter", () => {
   textProject3.style.display = "block";
 });
 imagemPokedex.addEventListener("click", () => {
-  window.open("https://github.com/davi33-emanoel/Nasa_2.0", "_blank");
+  window.open("https://emannoel-2023.github.io/pokedex_js/", "_blank");
 });
 imagemPokedex.addEventListener("mouseout", () => {
   textProject3.style.display = "none";
@@ -55,7 +55,7 @@ imagemCalc.addEventListener("mouseenter", () => {
 });
 imagemCalc.addEventListener("click", () => {
   window.open(
-    "https://github.com/davi33-emanoel/Calculadora-de-Emprestimos_JavaScript",
+    "https://emannoel-2023.github.io/calcuradora_de_imprestimos/",
     "_blank"
   );
 });
@@ -67,14 +67,14 @@ imagemMario.addEventListener("mouseenter", () => {
   textProject5.style.display = "block";
 });
 imagemMario.addEventListener("click", () => {
-  window.open("https://github.com/davi33-emanoel/Mario_js", "_blank");
+  window.open("https://emannoel-2023.github.io/mario_js/", "_blank");
 });
 imagemMario.addEventListener("mouseout", () => {
   textProject5.style.display = "none";
 });
 
 gitHub.addEventListener("click", () => {
-  window.open("https://github.com/davi33-emanoel", "_blank");
+  window.open("https://github.com/emannoel-2023", "_blank");
 });
 
 instagram.addEventListener("click", () => {
